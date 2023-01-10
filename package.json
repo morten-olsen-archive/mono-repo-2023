@@ -1,0 +1,31 @@
+{
+  "name": "@morten-olsen/template-repo",
+  "version": "1.0.0",
+  "packageManager": "yarn@3.3.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "postinstall": "husky install",
+    "test": "turbo test",
+    "build": "turbo build",
+    "publish-packages": "turbo run build test && changeset version && changeset publish"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "dependencies": {
+    "@changesets/cli": "^2.26.0",
+    "@commitlint/cli": "^17.3.0",
+    "@commitlint/config-conventional": "^17.3.0",
+    "changeset": "^0.2.6",
+    "commitizen": "^4.2.5",
+    "husky": "^8.0.2",
+    "turbo": "^1.7.0"
+  }
+}

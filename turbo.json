@@ -1,0 +1,22 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "pipeline": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": ["lib/**"],
+      "inputs": ["src/**/*.tsx", "src/**/*.ts"]
+    },
+    "test": {
+      "cache": false
+    },
+    "dev": {
+      "cache": false
+    },
+    "release": {
+      "outputs": ["lib/**"],
+      "inputs": ["src/**/*.tsx", "src/**/*.ts"],
+      "dependsOn": ["^build"]
+    }
+  },
+  "globalDependencies": ["tsconfig.base.json"]
+}
