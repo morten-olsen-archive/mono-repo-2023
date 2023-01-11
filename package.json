@@ -13,6 +13,7 @@
     "postinstall": "husky install",
     "test": "turbo test",
     "build": "turbo build",
+    "change:create": "changeset",
     "ci:version": "changeset version",
     "ci:publish": "pnpm publish -r --access public"
   },
