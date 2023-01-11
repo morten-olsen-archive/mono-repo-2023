@@ -1,7 +1,7 @@
 {
   "name": "@morten-olsen/template-repo",
   "version": "1.0.0",
-  "packageManager": "yarn@3.3.0",
+  "packageManager": "pnpm@7.24.3",
   "main": "index.js",
   "license": "MIT",
   "private": true,
@@ -9,10 +9,12 @@
     "packages/*"
   ],
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
     "postinstall": "husky install",
     "test": "turbo test",
     "build": "turbo build",
-    "publish-packages": "turbo run build test && changeset version && changeset publish"
+    "ci:version": "changeset version",
+    "ci:publish": "pnpm publish -r"
   },
   "config": {
     "commitizen": {
