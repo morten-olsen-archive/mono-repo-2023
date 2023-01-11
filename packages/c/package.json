@@ -1,5 +1,5 @@
 {
-  "name": "@morten-olssen/template-c",
+  "name": "@morten-olsen/template-c",
   "packageManager": "pnpm@7.24.3",
   "version": "1.0.1",
   "private": true,

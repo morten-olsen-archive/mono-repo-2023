@@ -14,7 +14,7 @@
     "test": "turbo test",
     "build": "turbo build",
     "ci:version": "changeset version",
-    "ci:publish": "pnpm publish -r"
+    "ci:publish": "pnpm publish -r --access public"
   },
   "config": {
     "commitizen": {
