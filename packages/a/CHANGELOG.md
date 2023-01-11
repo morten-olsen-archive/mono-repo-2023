@@ -1,0 +1,7 @@
+# @morten-olsen/template-a
+
+## 1.0.1
+
+### Patch Changes
+
+- 1349606: Initial version
