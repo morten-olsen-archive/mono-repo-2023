@@ -1,5 +1,5 @@
 {
-  "extends": "../../tsconfig.esm.json",
+  "extends": "@morten-olsen/template-configs/tsconfig.esm.json",
   "compilerOptions": {
     "outDir": "./lib/esm",
     "declarationDir": "./lib/esm/types"

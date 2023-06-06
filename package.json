@@ -11,7 +11,9 @@
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "postinstall": "husky install",
-    "test": "turbo test",
+    "test": "pnpm run test:lint && pnpm run test:pkg",
+    "test:lint": "eslint packages/*/src",
+    "test:pkg": "turbo test",
     "build": "turbo build",
     "change:create": "changeset",
     "ci:version": "changeset version",
@@ -26,10 +28,13 @@
     "@changesets/cli": "^2.26.0",
     "@commitlint/cli": "^17.3.0",
     "@commitlint/config-conventional": "^17.3.0",
+    "@react-native-community/eslint-config": "^3.2.0",
     "changeset": "^0.2.6",
     "commitizen": "^4.2.5",
+    "eslint": "^8.42.0",
     "husky": "^8.0.2",
-    "rome": "^11.0.0",
-    "turbo": "^1.7.0"
+    "prettier": "^2.8.8",
+    "turbo": "^1.7.0",
+    "typescript": "^4.9.4"
   }
 }

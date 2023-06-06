@@ -1,5 +1,5 @@
 {
-  "extends": "../../tsconfig.cjs.json",
+  "extends": "@morten-olsen/template-configs/tsconfig.cjs.json",
   "compilerOptions": {
     "outDir": "./lib/cjs",
     "declarationDir": "./lib/cjs/types"
