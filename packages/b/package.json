@@ -1,7 +1,7 @@
 {
   "name": "@morten-olsen/template-b",
   "packageManager": "pnpm@7.24.3",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "scripts": {
     "clean": "rm -rf ./lib",
     "build": "npm run clean && npm run build:esm && npm run build:cjs",
