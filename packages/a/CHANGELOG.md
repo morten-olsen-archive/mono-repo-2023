@@ -1,5 +1,11 @@
 # @morten-olsen/template-a
 
+## 1.0.3
+
+### Patch Changes
+
+- ac52ecc: update mono-repo setup
+
 ## 1.0.2
 
 ### Patch Changes
